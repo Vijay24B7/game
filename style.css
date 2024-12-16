@@ -1,0 +1,57 @@
+div.game{
+    width: 500px;
+    height: 250px;
+    border: 2px solid black;
+    position: relative;
+    
+}
+
+div#player{
+    width: 20px;
+    height: 50px;
+    position: relative;
+    top: 180px;
+    left: 5px;
+    
+}
+div.animate{
+    animation: jump 900ms infinite;
+}
+div#character{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 210px;
+    left: 480px;
+    animation: obst 1.5s infinite linear;
+}
+@keyframes jump{
+    0%{
+        top:180px;
+        left: 5px;
+    }
+    30%{
+        top: 100px;
+        left: 5px;
+    }
+    60%{
+        top: 100px;
+        left: 5px;
+    }
+    100%{
+        top: 180px;
+        left: 5px;
+    }
+}
+
+@keyframes obst{
+    from{
+        left: 480px;
+        top: 210px;
+    }
+    to{
+        left: -40px;
+        top: 210px;
+    }
+
+}
